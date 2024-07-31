@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Personal Finance Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Personal Finance Assistant</h1>
+        <div id="auth-section">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="register()">Register</button>
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="main-section" style="display:none;">
+            <div class="input-group">
+                <label for="income">Monthly Income:</label>
+                <input type="number" id="income" required>
+            </div>
+            <div class="input-group">
+                <label for="expenses">Monthly Expenses:</label>
+                <input type="number" id="expenses" required>
+            </div>
+            <div class="input-group">
+                <label for="savings">Current Savings:</label>
+                <input type="number" id="savings" required>
+            </div>
+            <button onclick="predict()">Predict Future Savings</button>
+            <button onclick="startVoiceAssistant()">Start Voice Assistant</button>
+            <div id="result"></div>
+            <canvas id="savingsChart"></canvas>
+            <h2>Goals</h2>
+            <div id="goals-list"></div>
+            <div class="input-group">
+                <input type="text" id="goal-name" placeholder="Goal Name">
+                <input type="number" id="goal-amount" placeholder="Target Amount">
+                <button onclick="addGoal()">Add Goal</button>
+            </div>
+            <h2>Stock Data</h2>
+            <input type="text" id="stock-symbol" placeholder="Stock Symbol">
+            <button onclick="fetchStockData()">Fetch Stock Data</button>
+            <canvas id="stockChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: rgb(126, 236, 116);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+canvas {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+#goals-list {
+    margin-bottom: 1rem;
+}
+
+#goals-list div {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
